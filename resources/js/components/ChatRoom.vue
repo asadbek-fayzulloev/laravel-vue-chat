@@ -1,5 +1,3 @@
-// resources/js/components/ChatRoom.vue
-
 <template>
   <div class="container">
     <div class="row">
