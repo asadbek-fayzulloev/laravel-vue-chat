@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/{any}', function () {
     return view('layouts.vue');
 })->where('any', '.*');
-
+Route::post('/generate-token', 'ChatController@generateToken');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
